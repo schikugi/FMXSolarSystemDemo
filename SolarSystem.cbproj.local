@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/01/23 12:40:21.000.724,=C:\Users\Shinji.Chikugi\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/01/23 12:40:22.000.257,=C:\Users\Shinji.Chikugi\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2018/01/23 13:06:12.000.054,C:\Users\Shinji.Chikugi\Documents\Embarcadero\Studio\Projects\FMXSolarSystemDemo\uSolarSystemForm.fmx=C:\Users\Shinji.Chikugi\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2018/01/23 13:06:12.000.054,C:\Users\Shinji.Chikugi\Documents\Embarcadero\Studio\Projects\FMXSolarSystemDemo\uSolarSystemForm.h=C:\Users\Shinji.Chikugi\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2018/01/23 13:06:12.000.054,C:\Users\Shinji.Chikugi\Documents\Embarcadero\Studio\Projects\FMXSolarSystemDemo\uSolarSystemForm.cpp=C:\Users\Shinji.Chikugi\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/01/23 13:07:15.000.613,C:\Users\Shinji.Chikugi\Documents\Embarcadero\Studio\Projects\FMXSolarSystemDemo\SolarSystemPCH1.h=C:\Users\Shinji.Chikugi\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2018/01/23 13:07:33.000.448,C:\Users\Shinji.Chikugi\Documents\Embarcadero\Studio\Projects\FMXSolarSystemDemo\SolarSystem.cbproj=C:\Users\Shinji.Chikugi\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>
