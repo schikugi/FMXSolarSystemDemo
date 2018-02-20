@@ -1,0 +1,100 @@
+object SolarSystemForm: TSolarSystemForm
+  Left = 0
+  Top = 0
+  Caption = 'FMXSolarSystemDemo'
+  ClientHeight = 480
+  ClientWidth = 600
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object TextureSun: TTextureMaterialSource
+    Left = 8
+    Top = 440
+  end
+  object ImageSpace: TImage
+    MultiResBitmap.Height = 3840
+    MultiResBitmap.Width = 5760
+    MultiResBitmap = <
+      item
+      end>
+    Align = Client
+    Size.Width = 600.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object ViewSpace: TViewport3D
+    Touch.GestureManager = GestureManager1
+    OnGesture = ViewSpaceGesture
+    Align = Client
+    Color = claNull
+    Size.Width = 600.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    object SolarSystem: TDummy
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      object SphereEarth: TSphere
+        Position.X = 5.000000000000000000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        MaterialSource = TextureEarth
+      end
+      object SphereSun: TSphere
+        Scale.X = 5.000000000000000000
+        Scale.Y = 5.000000000000000000
+        Scale.Z = 5.000000000000000000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        OnDblClick = SphereSunDblClick
+        MaterialSource = TextureSun
+      end
+    end
+  end
+  object TextureEarth: TTextureMaterialSource
+    Left = 40
+    Top = 440
+  end
+  object Timer1: TTimer
+    Interval = 50
+    OnTimer = Timer1Timer
+    Left = 80
+    Top = 104
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 88
+    Top = 56
+    GestureData = <
+      item
+        Control = ViewSpace
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end
+          item
+            GestureID = sgiUp
+          end
+          item
+            GestureID = sgiDown
+          end
+          item
+            GestureID = sgiScratchout
+          end
+          item
+            GestureID = sgiSemiCircleLeft
+          end
+          item
+            GestureID = sgiSemiCircleRight
+          end>
+      end>
+  end
+end
